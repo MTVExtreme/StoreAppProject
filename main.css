@@ -38,6 +38,7 @@ a {
     padding: 15px;
     float: left;
     margin: 0px 0px 0px 0px;
+    font-weight: bold;
 }
 /*Search*/
 /*#search-bar-main {
@@ -125,7 +126,10 @@ a {
         background: -webkit-linear-gradient(top, #aa8e74 1%,#722e13 23%,#724e40 76%,#a36c42 100%); /* Chrome10-25,Safari5.1-6 */
         background: linear-gradient(to bottom, #aa8e74 1%,#722e13 23%,#724e40 76%,#a36c42 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aa8e74', endColorstr='#a36c42',GradientType=0 ); /* IE6-9 */
-    }
+        
+        color: white;
+        font-weight: bold;
+        }
 
 #banner {
     text-align: center;
@@ -158,6 +162,16 @@ a {
     float: right;
     width: 40%;
     margin: 20px 20px 20px 20px
+}
+#about-box h2 
+{
+        padding-right: 10px;
+        border-right: 1px;     
+        border-right: solid;
+        color: orange;
+        border-color: white;
+        font-size: 26px;
+        font-weight: bold;
 }
 
 
