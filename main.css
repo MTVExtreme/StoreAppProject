@@ -91,13 +91,10 @@ a {
     -webkit-padding-start: 0px;
 }
 
-.Nav-Bar li {
-       
+    .Nav-Bar li {
         font-size: 20px;
         padding: 5px 10px 5px 10px;
-
         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#91dd5a+2,85af67+35,72aa00+64,286617+99 */
-
         background: #91dd5a; /* Old browsers */
         background: -moz-linear-gradient(top, #91dd5a 2%, #85af67 35%, #72aa00 64%, #286617 99%); /* FF3.6-15 */
         background: -webkit-linear-gradient(top, #91dd5a 2%,#85af67 35%,#72aa00 64%,#286617 99%); /* Chrome10-25,Safari5.1-6 */
@@ -110,19 +107,25 @@ a {
         position: relative;
         float: left;
         list-style: none;
+
+        transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
     }
 
-.Nav-Bar li:hover {
-        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#aa8e74+1,722e13+23,724e40+76,a36c42+100 */
+        .Nav-Bar li:hover {
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#aa8e74+1,722e13+23,724e40+76,a36c42+100 */
+            background: #aa8e74; /* Old browsers */
+            background: -moz-linear-gradient(top, #aa8e74 1%, #722e13 23%, #724e40 76%, #a36c42 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, #aa8e74 1%,#722e13 23%,#724e40 76%,#a36c42 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, #aa8e74 1%,#722e13 23%,#724e40 76%,#a36c42 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aa8e74', endColorstr='#a36c42',GradientType=0 ); /* IE6-9 */
+            color: white;
+            font-weight: bold;
 
-        background: #aa8e74; /* Old browsers */
-        background: -moz-linear-gradient(top, #aa8e74 1%, #722e13 23%, #724e40 76%, #a36c42 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(top, #aa8e74 1%,#722e13 23%,#724e40 76%,#a36c42 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom, #aa8e74 1%,#722e13 23%,#724e40 76%,#a36c42 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aa8e74', endColorstr='#a36c42',GradientType=0 ); /* IE6-9 */
-        
-        color: white;
-        font-weight: bold;
+            transition: all .3s ease-in-out;
+            -moz-transition: all .3s ease-in-out;
+            -webkit-transition: all .3s ease-in-out;
         }
 
 #banner {
@@ -148,6 +151,7 @@ a {
 
 #about-box {
     /*background-color: #666;*/
+    +
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#af9d6b+0,ace8a4+30,ace8a4+30,b68d4c+69,a4d6a4+100 */
 
     background: #af9d6b; /* Old browsers */
@@ -222,30 +226,31 @@ a {
         text-align: center;
         font-size: 20px;
         font-weight: bold;
-        color: rgb(246, 246, 246);
+        color: rgb(60, 152, 42);
         
     }
 
-        .Pic-Bar span
-        {
-
-            vertical-align: middle;
-        }
-
-
-
-    .Pic-Bar div:hover {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(16, 16, 16, .6);
-        transition: all .3s ease-in-out;
-        -moz-transition: all .3s ease-in-out;
-        -webkit-transition: all .3s ease-in-out;
+    .Pic-Bar span {
+        display: inline-block;
         vertical-align: middle;
+        line-height: normal;
+        top: 50%;
     }
+        
+        
+        
+        .Pic-Bar div:hover {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(16, 16, 16, .6);
+            transition: all .3s ease-in-out;
+            -moz-transition: all .3s ease-in-out;
+            -webkit-transition: all .3s ease-in-out;
+
+        }
         
         
         .Pic-Bar img {
@@ -268,5 +273,18 @@ a {
     height: 2000px;
 }
 
+.Product-Main
+{
+    padding: 30px;
+}
+
+.Footer {
+    background-color: black;
+    border-radius: 30px 30px 0px 0px;
+    position: relative;
+    margin-top: -180px; /* negative value of footer height */
+    height: 180px;
+    clear: both;
+}
 
 
